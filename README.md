@@ -1,5 +1,5 @@
 # Container for react based micro frontend.
-Based on Cam Jackson's demo on microfrontends - https://github.com/micro-frontends-demo
+Based on Cam Jackson's demo on microfrontends - https://github.com/micro-frontends-demo and https://martinfowler.com/articles/micro-frontends.html
 
 ##### Notes:
 1. Why do you require react-app-rewired? Because it lets you change default webpack configs without ejecting. Ejecting can cause millions of files to be added to your app which become very difficult to manage. So we can pick and choose what we want to override without ejecting. Also note that this project is not recommended by the creator himself - Tim Arney. See https://github.com/timarney/react-app-rewired. Use next.js or Razzle instead. But what about projects which dont want to do SSR? Have to check these out later.
