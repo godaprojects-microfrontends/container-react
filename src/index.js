@@ -1,3 +1,4 @@
+import 'react-app-polyfill/ie11' // Just adding because its there in the original project
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
