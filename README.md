@@ -1,4 +1,6 @@
 # Container for react based micro frontend.
+This is the container for the microfrontend apps.
+
 Based on Cam Jackson's demo on microfrontends - https://github.com/micro-frontends-demo and https://martinfowler.com/articles/micro-frontends.html
 
 ##### Notes:
