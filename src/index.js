@@ -1,6 +1,6 @@
-import 'react-app-polyfill/ie11' // Just adding because its there in the original project
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
+import 'react-app-polyfill/ie11' // Just adding because its there in the original project
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
