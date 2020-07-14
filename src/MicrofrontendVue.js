@@ -17,7 +17,6 @@ class MicrofrontendVue extends React.Component {
             script.crossOrigin = '';
             script.src = `${host}/${manifest['app.js']}`;
             document.head.appendChild(script);
-            console.log(script)
 
             script = document.createElement('script');
             script.id = scriptId;
@@ -25,7 +24,6 @@ class MicrofrontendVue extends React.Component {
             script.src = `${host}/${manifest['chunk-vendors.js']}`;
             script.onload = this.renderMicrofrontend;
             document.head.appendChild(script);
-            console.log(script)
         });
 
     }
@@ -37,8 +35,8 @@ class MicrofrontendVue extends React.Component {
 
     renderMicrofrontend = () => {
 
-        const { name, window, history } = this.props;
-        window[`render${name}`](`${name}-container`);
+        const { name, window, history, data } = this.props;
+        window[`render${name}`](`${name}-container`, data);
     }
 
     render() {
